@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pixelya Reklam Ajansı | Antalya Dijital Pazarlama</title>
+<meta name="description" content="Antalya merkezli dijital pazarlama ajansı: SEO, Google Ads, Meta reklamları, web tasarım, e-ticaret danışmanlığı ve içerik üretimi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#08080a"><link rel="alternate" hreflang="en" href="en/index.html">
+<style>
+:root{--bg:#08080a;--ink:#f4f2ff;--mute:#a7a2c0;--p:#8b5cf6;--m:#ec4899;--c:#22d3ee;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:auto}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;transition:background .6s}
+h1,h2,h3,.logo,.mono{font-family:'Space Grotesk',sans-serif}
+a{color:inherit;text-decoration:none}
+main{position:relative;overflow-x:clip}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block}
+.vig{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,transparent 45%,#08080acc 100%)}
+.story{position:relative;z-index:5}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:16px 5vw;background:linear-gradient(#08080af2,#08080a99);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.logo{font-weight:700;font-size:22px;letter-spacing:-.02em}
+.logo span{background:linear-gradient(90deg,var(--p),var(--m));-webkit-background-clip:text;background-clip:text;color:transparent}
+nav ul{display:flex;gap:28px;list-style:none;font-size:14px;color:var(--mute)}
+nav ul a:hover{color:var(--ink)}
+.btn{display:inline-block;padding:13px 26px;border-radius:99px;font-weight:600;font-size:15px;background:linear-gradient(90deg,var(--p),var(--m));box-shadow:0 0 30px #8b5cf655;transition:.25s;border:0;color:#fff;cursor:pointer}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 50px #ec489977}
+.btn.ghost{background:#08080a66;border:1px solid var(--line);box-shadow:none;backdrop-filter:blur(8px)}
+nav .btn{padding:9px 20px;font-size:14px}
+
+section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:110px 6vw}
+#hero{min-height:100vh;position:relative}
+#close{min-height:130vh}
+#apart{min-height:190vh;justify-content:flex-start;padding-top:22vh}
+#around{min-height:130vh}
+#outro{min-height:120vh;justify-content:flex-end;padding-bottom:110px}
+#outro .blk{max-width:560px;margin-left:auto}
+#outro .cinfo{grid-template-columns:1fr;margin:26px 0;max-width:none}
+.blk{max-width:520px}
+.right{margin-left:auto}
+.center{margin:0 auto;text-align:center;max-width:620px}
+.tag{display:inline-block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--c);border:1px solid #22d3ee44;padding:6px 14px;border-radius:99px;margin-bottom:22px;background:#22d3ee0f}
+h1{font-size:clamp(36px,5.6vw,76px);line-height:1.03;letter-spacing:-.035em}
+h1 em{font-style:normal;background:linear-gradient(90deg,#a78bfa,#ec4899,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(30px,4.2vw,56px);letter-spacing:-.03em;line-height:1.08;margin:10px 0 18px}
+.eyebrow{color:var(--p);font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;font-family:'Space Grotesk'}
+.lead{color:var(--mute);margin:22px 0 30px;font-size:clamp(15px,1.5vw,18px)}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.hint{position:absolute;bottom:26px;left:6vw;font-size:12px;letter-spacing:.18em;color:var(--mute);text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.hint i{display:block;width:1px;height:38px;background:linear-gradient(var(--c),transparent);animation:dr 1.8s infinite}
+@keyframes dr{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0}
+.stat{padding:22px;border-radius:18px;background:#0d0d14cc;border:1px solid var(--line);backdrop-filter:blur(10px)}
+.stat b{display:block;font:700 40px 'Space Grotesk';background:linear-gradient(90deg,#a78bfa,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--mute);font-size:14px}
+.badges{display:flex;gap:10px;flex-wrap:wrap}
+.badges span{font-size:13px;padding:7px 14px;border-radius:99px;border:1px solid var(--line);background:#0d0d14cc}
+.roas{font:700 clamp(80px,13vw,170px)/1 'Space Grotesk';background:linear-gradient(90deg,#22d3ee,#a78bfa,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent;margin:10px 0}
+.nums{display:grid;gap:12px;margin:22px 0 30px}
+.nums div{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:10px;color:var(--mute)}
+.nums b{color:var(--ink);font-family:'Space Grotesk'}
+.logos{display:flex;flex-wrap:wrap;gap:8px}
+.logos span{padding:7px 14px;border-radius:99px;border:1px solid var(--line);color:var(--mute);font-size:13px;background:#0d0d14b3}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.areas span{font-size:12px;padding:5px 12px;border-radius:8px;background:#8b5cf622;color:#c4b5fd}
+.cinfo{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:30px auto;max-width:900px}
+.cinfo div{padding:20px;border-radius:18px;border:1px solid var(--line);background:#0d0d14cc;backdrop-filter:blur(10px);text-align:left}
+.cinfo small{display:block;color:var(--mute);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.cinfo a:hover{color:var(--c)}
+footer{margin-top:50px;padding-top:24px;border-top:1px solid var(--line);color:var(--mute);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.svc-list{display:none;margin-top:30px;gap:12px;text-align:left}
+.svc-list div{padding:14px 16px;border-radius:14px;background:#0d0d14d9;border:1px solid var(--line);font-size:14px;color:var(--mute)}
+.svc-list b{display:block;color:var(--ink);font-family:'Space Grotesk'}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.reveal.on{opacity:1;transform:none}
+
+/* labels (exploded view) */
+#labels{position:fixed;inset:0;z-index:6;pointer-events:none;opacity:0}
+#leaders{position:absolute;inset:0;width:100%;height:100%}
+#leaders line{stroke-width:1;opacity:.8}
+#leaders circle{fill:none;stroke-width:1.5}
+.lab{position:absolute;left:0;top:0;width:250px;padding:12px 14px;border-radius:14px;background:#0b0b12d9;border:1px solid var(--line);backdrop-filter:blur(10px);will-change:transform}
+.lab b{display:flex;align-items:center;gap:8px;font:600 15px 'Space Grotesk'}
+.lab b i{width:9px;height:9px;border-radius:50%;background:var(--col);box-shadow:0 0 10px var(--col)}
+.lab span{display:block;font-size:12.5px;color:var(--mute);line-height:1.45;margin-top:4px}
+
+/* HUD */
+.hud{position:fixed;z-index:40;bottom:22px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:14px;pointer-events:none}
+.hud button{pointer-events:auto;cursor:pointer;color:var(--ink);font:600 12px 'Space Grotesk';letter-spacing:.14em;text-transform:uppercase}
+.hold{position:relative;display:flex;align-items:center;gap:10px;padding:8px 20px 8px 8px;border-radius:99px;background:#0d0d14d9;border:1px solid var(--line);backdrop-filter:blur(12px);touch-action:none;user-select:none;-webkit-user-select:none}
+.hold svg{width:38px;height:38px;transform:rotate(-90deg)}
+.hold circle{fill:none;stroke-width:3}
+.hold .bg{stroke:#ffffff22}
+.hold .fg{stroke:url(#g);stroke-dasharray:126;stroke-dashoffset:126;stroke-linecap:round}
+.hold.on{border-color:#ec4899aa;box-shadow:0 0 40px #ec489966}
+.bp{padding:12px 18px;border-radius:99px;background:#0d0d14d9;border:1px solid var(--line);backdrop-filter:blur(12px)}
+.bp.on{border-color:var(--c);color:var(--c)}
+#loader{position:fixed;inset:0;z-index:99;background:var(--bg);display:grid;place-items:center;transition:opacity .8s;font:600 13px 'Space Grotesk';letter-spacing:.2em;color:var(--mute)}
+#loader.off{opacity:0;pointer-events:none}
+.nogl .vig,.nogl #labels{display:none}
+.nogl .stat,.nogl .cinfo div{background:#14141c}
+@media(max-width:800px){
+  nav ul{display:none}
+  section{padding:100px 22px}
+  #hero{justify-content:flex-end;padding-bottom:110px}
+  .hint{display:none}
+  #apart{min-height:150vh}
+  #labels{display:none}
+  .svc-list{display:grid}
+  .right{margin-left:0}
+  .blk{max-width:none}
+  #close,#around{justify-content:flex-end}
+  .lead{margin:16px 0 22px}
+  .stats{margin:18px 0}
+  .stat{padding:14px}.stat b{font-size:30px}
+  .hold span{display:none}.hold{padding:8px}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+#extras{min-height:auto;padding:90px 6vw;display:block}
+.xwrap{max-width:1100px;margin:0 auto;display:grid;gap:34px}
+.xp{background:#0b0b12ee;border:1px solid var(--line);border-radius:26px;padding:34px;backdrop-filter:blur(12px)}
+.xp h2{font-size:clamp(24px,3vw,38px);margin:6px 0 20px}
+.xg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}.xg.x3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.xc{display:block;padding:16px;border:1px solid var(--line);border-radius:16px;background:#12121b;transition:.25s}.xc:hover{border-color:#8b5cf6aa;transform:translateY(-3px)}
+.xc b{display:block;font:600 16px 'Space Grotesk';margin-bottom:4px}.xc span{font-size:13px;color:var(--mute);line-height:1.5}.xc small{display:block;color:var(--c);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px}
+.areas.big a{font-size:14px;padding:8px 16px;border-radius:10px;background:#8b5cf622;color:#c4b5fd}.areas.big a:hover{background:#8b5cf655}
+.xnote{color:var(--mute);margin-top:18px;font-size:14px}
+.xfaq details{border:1px solid var(--line);border-radius:14px;background:#12121b;margin-bottom:10px;padding:0 18px}
+.xfaq summary{cursor:pointer;padding:14px 0;font:600 15px 'Space Grotesk';list-style:none}.xfaq summary:after{content:'+';float:right;color:var(--c)}.xfaq details[open] summary:after{content:'–'}
+.xfaq p{color:var(--mute);padding-bottom:14px;font-size:14px}
+.hfoot{margin-top:50px;padding-top:30px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);gap:24px;font-size:13px;color:var(--mute)}
+.hfoot h4{color:var(--ink);font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}.hfoot a{display:block;padding:2px 0}.hfoot a:hover{color:var(--c)}
+.hfoot .hl{grid-column:1/-1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line);padding-top:16px}.hfoot .hl a{display:inline}
+nav ul{gap:20px}
+@media(max-width:800px){.hfoot{grid-template-columns:1fr 1fr}.xp{padding:22px}#extras{padding:70px 14px}}
+
+</style>
+</head>
+<body>
+<div id="loader">YÜKLENİYOR</div>
+
+<nav>
+  <a class="logo" href="#hero">Pixel<span>ya</span></a>
+  <ul><li><a href="#apart">Hizmetler</a></li><li><a href="#extras">Sektörler</a></li><li><a href="blog/index.html">Blog</a></li><li><a href="portfoy/index.html">Portföy</a></li><li><a href="hakkimizda/index.html">Hakkımızda</a></li><li><a href="iletisim/index.html">İletişim</a></li></ul>
+  <a class="btn" href="iletisim/index.html">Teklif Al</a>
+</nav>
+
+<main>
+<canvas id="gl"></canvas>
+<div class="vig"></div>
+
+<div id="labels"><svg id="leaders"></svg></div>
+
+<div class="story">
+
+<section id="hero">
+  <div class="blk">
+    <span class="tag reveal">Antalya · Dijital Pazarlama Ajansı</span>
+    <h1 class="reveal">Antalya'da markanızı dijitalde <em>zirveye</em> taşıyoruz</h1>
+    <p class="lead reveal">SEO'dan Google ve Meta reklamlarına, web tasarımdan e-ticarete kadar tüm dijital büyümenizi tek ekipten yönetiyoruz. Sonuçları her ay rakamlarla raporluyoruz.</p>
+    <div class="cta reveal"><a class="btn" href="iletisim/index.html">Ücretsiz Görüşme</a><a class="btn ghost" href="#apart">Hizmetleri Gör</a></div>
+  </div>
+  <div class="hint"><i></i>Kaydır</div>
+</section>
+
+<section id="close">
+  <div class="blk right">
+    <div class="eyebrow reveal">Biz kimiz</div>
+    <h2 class="reveal">Piksel piksel inşa ediyoruz</h2>
+    <p class="lead reveal" style="margin-bottom:0">Pixelya, Antalya merkezli bir dijital pazarlama ve reklam ajansı. Otel ve turizm, sağlık ve klinikler, e-ticaret markaları için kampanyaları ayrıntısına kadar kuruyor, aylık raporlarla sonuçları açıkça paylaşıyoruz.</p>
+    <div class="stats reveal">
+      <div class="stat"><b data-n="8">8</b><span>Yıllık deneyim</span></div>
+      <div class="stat"><b data-n="150" data-s="+">150+</b><span>Marka</span></div>
+      <div class="stat"><b data-n="500" data-s="+">500+</b><span>Tamamlanan proje</span></div>
+      <div class="stat"><b data-n="94" data-p="%">%94</b><span>Müşteri memnuniyeti</span></div>
+    </div>
+    <div class="badges reveal"><span>Meta Business Partner</span><span>ikas Partner</span></div>
+  </div>
+</section>
+
+<section id="apart">
+  <div class="center">
+    <div class="eyebrow reveal">Hizmetler</div>
+    <h2 class="reveal">Her parça bir hizmet</h2>
+    <p class="lead reveal">Altı parça, tek bir bütün. Büyümeniz için ihtiyacınız olan her şeyi ayrı ayrı veya birlikte kuruyoruz.</p>
+    <div class="svc-list" id="svcList"></div>
+  </div>
+</section>
+
+<section id="around">
+  <div class="blk">
+    <div class="eyebrow reveal">Sonuçlar</div>
+    <div class="roas reveal">7,63x</div>
+    <p class="lead reveal" style="margin:0">Bir e-ticaret müşterimizin Meta reklamlarındaki ROAS değeri.</p>
+    <div class="nums reveal"><div>Reklam harcaması<b>158.041 TL</b></div><div>Satış değeri<b>1.205.269 TL</b></div><div>ROAS<b>7,63</b></div></div>
+    <div class="eyebrow reveal" style="margin:34px 0 12px">Birlikte çalıştığımız markalar</div>
+    <div class="logos reveal">
+      <span>Hersley</span><span>Naturel Outlet</span><span>Global Canlı Mezat</span><span>Paris Mode</span><span>Dr. Banu Karakaya</span><span>Royal VIP Mağaza</span><span>Everest</span><span>MGM Outlet</span><span>Qubi Wear</span><span>Psikoloji Antalya</span><span>Rastori Mobilya</span><span>Ercan Et Tanzim Satış</span><span>Saze Wear</span><span>Berkay Arslan VIP</span><span>Hooliguys</span><span>326 Men's Wear</span><span>Hakan Toros VIP</span>
+    </div>
+    <div class="areas reveal"><span>Muratpaşa</span><span>Konyaaltı</span><span>Kepez</span><span>Alanya</span><span>Manavgat</span><span>Side</span><span>Türkiye geneli</span></div>
+  </div>
+</section>
+
+<section id="extras">
+  <div class="xwrap">
+    <div class="xp"><div class="eyebrow">Hizmetler</div><h2>Altı hizmet, tek plan</h2><div class="xg"><a class="xc" href="hizmetler/antalya-seo-ajansi/index.html"><b>SEO ve GEO</b><span>Pixelya, Antalya&#x27;daki işletmelerin Google ve yapay zekâ asistanlarında görünmesi için SEO ve GEO hizmeti sunuy…</span></a><a class="xc" href="hizmetler/antalya-google-ads-ajansi/index.html"><b>Google Ads</b><span>Pixelya ile Antalya&#x27;da reklam bütçesini ölçülebilir satış ve talebe yönlendirin. Ücretsiz hesap analizi isteye…</span></a><a class="xc" href="hizmetler/antalya-sosyal-medya-ajansi/index.html"><b>Sosyal Medya</b><span>Pixelya, Instagram, Facebook ve TikTok&#x27;ta içerik ve reklamla marka büyütmeyi ve ücretsiz hesap analizi sunmayı…</span></a><a class="xc" href="hizmetler/antalya-web-tasarim/index.html"><b>Web Tasarım</b><span>Pixelya, Antalya&#x27;da hızlı, mobil uyumlu ve satış odaklı kurumsal ve otel siteleri kuruyor. Ücretsiz analiz ve …</span></a><a class="xc" href="hizmetler/icerik-uretimi/index.html"><b>İçerik Üretimi</b><span>Pixelya&#x27;nın Antalya&#x27;da SEO uyumlu blog, reels ve ürün içerikleri ürettiğini, markaya özel plan için teklif alı…</span></a><a class="xc" href="hizmetler/e-ticaret-danismanligi/index.html"><b>E-ticaret Danışmanlığı</b><span>Antalya&#x27;da e-ticaret sitesi kurulumu, Trendyol ve Hepsiburada mağaza yönetimi ve reklamlarla satış artışı suna…</span></a></div></div>
+    <div class="xp"><div class="eyebrow">Sektörler</div><h2>Sektörünüze göre strateji</h2><div class="xg x3"><a class="xc" href="sektorler/otel-turizm-dijital-pazarlama/index.html"><b>Otel ve Turizm</b><span>Antalya&#x27;daki oteller ve tur/transfer firmaları için çok dilli SEO, Google İşletme Profili, reklam ve doğrudan …</span></a><a class="xc" href="sektorler/saglik-klinik-dijital-pazarlama/index.html"><b>Sağlık ve Klinik</b><span>Antalya&#x27;daki klinikler ve sağlık turizmi kuruluşları için, sağlık tanıtım mevzuatına uygun dijital pazarlama h…</span></a><a class="xc" href="sektorler/e-ticaret-dijital-pazarlama/index.html"><b>E-ticaret</b><span>E-ticaret markaları için Meta ve Google reklamları, ürün SEO&#x27;su ve ikas kurulumu anlatılıyor. Bir müşterinin M…</span></a></div></div>
+    <div class="xp"><div class="eyebrow">Bölgeler</div><h2>Antalya'nın her ilçesinde</h2><div class="areas big"><a href="bolgeler/muratpasa-dijital-pazarlama/index.html">Muratpaşa</a><a href="bolgeler/konyaalti-dijital-pazarlama/index.html">Konyaaltı</a><a href="bolgeler/kepez-dijital-pazarlama/index.html">Kepez</a><a href="bolgeler/alanya-dijital-pazarlama/index.html">Alanya</a><a href="bolgeler/manavgat-dijital-pazarlama/index.html">Manavgat ve Side</a></div>
+      <p class="xnote">Reklam hesabı kontrolü, aylık rapor ve ücretsiz tanışma görüşmesi: dört adımlı süreç — ücretsiz tanışma, analiz, strateji ve uygulama, aylık rapor.</p></div>
+    <div class="xp"><div class="eyebrow">Sık sorulanlar</div><h2>Merak edilenler</h2><div class="xfaq"><details><summary>Hangi hizmetle başlamalıyım?</summary><p>Hedefe ve bütçeye bağlı. Hızlı müşteri için Google Ads, uzun vadeli trafik için SEO, marka bilinirliği için sosyal medya öneriliyor.</p></details><details><summary>Sonuçlar ne zaman görülür?</summary><p>Reklam sonuçları ilk haftadan görülebilir; SEO genellikle 3-6 ay içinde belirginleşir.</p></details><details><summary>Sıralama veya satış garantisi veriyor musunuz?</summary><p>Hayır. Garanti vermiyoruz; ölçüm, aylık rapor ve düzenli optimizasyonla ilerliyoruz.</p></details><details><summary>Reklam hesabı kime ait olur?</summary><p>Hesaplar her zaman size aittir; ajans yönetici olarak erişir ve reklam bütçesi doğrudan platforma ödenir.</p></details><details><summary>Sadece Antalya&#x27;da mı çalışıyorsunuz?</summary><p>Antalya&#x27;nın tüm ilçelerinde yüz yüze, Türkiye genelinde online çalışıyoruz.</p></details></div></div>
+    <div class="xp"><div class="eyebrow">Blog</div><h2>Son yazılar</h2><div class="xg"><a class="xc" href="blog/youtube-shorts-isletmeler-icin/index.html"><small>Sosyal medya · 2026-11-23</small><b>YouTube Shorts işletmeler için: 3 dakikalık Shorts ile müşteri kazanmak</b></a><a class="xc" href="blog/sosyal-medya-icerik-takvimi-hazirlama/index.html"><small>Sosyal medya · 2026-11-23</small><b>Sosyal medya içerik takvimi nasıl hazırlanır?</b></a><a class="xc" href="blog/meta-conversions-api-nedir/index.html"><small>Reklam · 2026-11-23</small><b>Meta Conversions API (CAPI) nedir? Piksel neden yetmiyor?</b></a><a class="xc" href="blog/linkedin-b2b-pazarlama-rehberi/index.html"><small>Sosyal medya · 2026-11-23</small><b>LinkedIn ile B2B pazarlama: şirketlere satış yapan işletmeler için rehber</b></a><a class="xc" href="blog/instagram-mesaj-kisitlamasi-eylem-engellendi/index.html"><small>Sosyal medya · 2026-11-23</small><b>Instagram mesaj kısıtlaması ve &quot;Eylem engellendi&quot; uyarısı: işletmeler ne yapmalı?</b></a><a class="xc" href="blog/google-ai-modu-turkiye-isletmeler/index.html"><small>SEO · 2026-11-23</small><b>Google AI Modu Türkiye&#x27;de: işletmelerin arama görünürlüğü nasıl değişiyor?</b></a></div><p><a class="btn ghost" href="blog/index.html">Tüm yazılar (38)</a></p></div>
+  </div>
+</section>
+
+<section id="outro">
+  <div class="blk">
+    <div class="eyebrow reveal">İletişim</div>
+    <h2 class="reveal">Markanızı birlikte büyütelim</h2>
+    <p class="lead reveal" style="margin-bottom:0">Hedeflerinizi anlatın, size uygun dijital büyüme planını birlikte çıkaralım.</p>
+  <div class="cinfo reveal">
+    <div><small>Telefon</small><a href="tel:+905400242107">0540 024 21 07</a></div>
+    <div><small>E-posta</small><a href="mailto:info@pixelya.com.tr">info@pixelya.com.tr</a></div>
+    <div><small>Adres</small>Habibler Mah., Kepez / Antalya</div>
+  </div>
+  <div class="cta reveal"><a class="btn" href="iletisim/index.html">İletişim Sayfası</a><a class="btn ghost" href="https://www.youtube.com/channel/UC5YON5eLBt2QIRYkOHUnt9A">YouTube Kanalımız</a></div>
+  </div>
+  <footer class="hfoot"><div><h4>Hizmetler</h4><a href="hizmetler/antalya-seo-ajansi/index.html">SEO ve GEO</a><a href="hizmetler/antalya-google-ads-ajansi/index.html">Google Ads</a><a href="hizmetler/antalya-sosyal-medya-ajansi/index.html">Sosyal Medya</a><a href="hizmetler/antalya-web-tasarim/index.html">Web Tasarım</a><a href="hizmetler/icerik-uretimi/index.html">İçerik Üretimi</a><a href="hizmetler/e-ticaret-danismanligi/index.html">E-ticaret Danışmanlığı</a></div><div><h4>Sektörler</h4><a href="sektorler/otel-turizm-dijital-pazarlama/index.html">Otel ve Turizm</a><a href="sektorler/saglik-klinik-dijital-pazarlama/index.html">Sağlık ve Klinik</a><a href="sektorler/e-ticaret-dijital-pazarlama/index.html">E-ticaret</a></div><div><h4>Bölgeler</h4><a href="bolgeler/muratpasa-dijital-pazarlama/index.html">Muratpaşa</a><a href="bolgeler/konyaalti-dijital-pazarlama/index.html">Konyaaltı</a><a href="bolgeler/kepez-dijital-pazarlama/index.html">Kepez</a><a href="bolgeler/alanya-dijital-pazarlama/index.html">Alanya</a><a href="bolgeler/manavgat-dijital-pazarlama/index.html">Manavgat ve Side</a></div><div><h4>Pixelya</h4><a href="portfoy/index.html">Portföy</a><a href="vaka/e-ticaret-meta-reklamlari/index.html">Vaka çalışması</a><a href="hakkimizda/index.html">Hakkımızda</a><a href="blog/index.html">Blog</a><a href="en/index.html">English</a></div><div class="hl"><span>© 2026 Pixelya Reklam Ajansı</span><span><a href="gizlilik-politikasi/index.html">Gizlilik Politikası</a> · <a href="kvkk-aydinlatma-metni/index.html">KVKK Aydınlatma Metni</a> · <a href="cerez-politikasi/index.html">Çerez Politikası</a></span></div></footer>
+</section>
+
+</div>
+</main>
+
+<div class="hud">
+  <button class="hold" id="hold" aria-label="Basılı tut: parçaları aydınlat">
+    <svg viewBox="0 0 48 48"><defs><linearGradient id="g"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#ec4899"/></linearGradient></defs><circle class="bg" cx="24" cy="24" r="20"/><circle class="fg" id="ring" cx="24" cy="24" r="20"/></svg>
+    <span id="holdTxt">Basılı tut · Aydınlat</span>
+  </button>
+  <button class="bp" id="bp">Blueprint</button>
+</div>
+
+<script>(function(){var ok=false;window.__px=function(){ok=true};function fallback(){if(ok)return;document.documentElement.classList.add("nogl");var l=document.getElementById("loader");if(l)l.classList.add("off");document.querySelectorAll(".reveal").forEach(function(e){e.classList.add("on")});var h=document.querySelector(".hud");if(h)h.style.display="none";}addEventListener("error",function(e){if(e.target&&e.target.tagName==="SCRIPT")fallback()},true);setTimeout(fallback,7000);if(location.protocol==="file:")setTimeout(fallback,600);})();</script>
+<script type="importmap">
+{"imports":{"three":"./assets/three/three.module.js","three/addons/":"./assets/three/addons/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
+
+const $ = (s) => document.querySelector(s);
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const smooth = (t) => t * t * (3 - 2 * t);
+const ease = (t) => (t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+const DEG = Math.PI / 180;
+
+/* ---------- Reveal + counters, driven by scroll position (no observers) ---------- */
+const reveals = [...document.querySelectorAll('.reveal')];
+reveals.forEach((el, i) => { el.style.transitionDelay = (i % 4) * 80 + 'ms'; });
+function runCounters(root) {
+  root.querySelectorAll('[data-n]').forEach((b) => {
+    if (b._done) return; b._done = true;
+    const n = +b.dataset.n, s = b.dataset.s || '', p = b.dataset.p || '', st = performance.now();
+    (function step(now) { const k = Math.min((now - st) / 1400, 1); b.textContent = p + Math.round(n * (1 - Math.pow(1 - k, 3))) + s; if (k < 1) requestAnimationFrame(step); })(st);
+  });
+}
+function doReveals() {
+  const lim = innerHeight * 0.88;
+  for (const el of reveals) {
+    if (el.classList.contains('on')) continue;
+    if (el.getBoundingClientRect().top < lim) { el.classList.add('on'); runCounters(el); }
+  }
+}
+
+/* ---------- Services (each accent cube = one service) ---------- */
+const SERVICES = [
+  { t: 'SEO ve GEO', d: "Google'da ve yapay zekâ asistanlarında görünür olun.", c: '#22d3ee' },
+  { t: 'Google Ads', d: 'Arama, Haritalar, YouTube ve Performance Max.', c: '#fbbf24' },
+  { t: 'Meta Reklamları', d: "Instagram, Facebook ve TikTok'ta satışa dönen kampanyalar.", c: '#ec4899' },
+  { t: 'Web Tasarım', d: 'Kurumsal, otel ve klinik siteleri.', c: '#a78bfa' },
+  { t: 'E-ticaret', d: 'ikas kurulumu, pazaryerleri, canlı mezat.', c: '#34d399' },
+  { t: 'İçerik Üretimi', d: 'Blog, video, ürün fotoğrafı ve metni.', c: '#fb7185' }
+];
+$('#svcList').innerHTML = SERVICES.map((s) => `<div><b style="color:${s.c}">${s.t}</b>${s.d}</div>`).join('');
+const labelsEl = $('#labels'), leaders = $('#leaders');
+const labEls = SERVICES.map((s) => {
+  const el = document.createElement('div'); el.className = 'lab'; el.style.setProperty('--col', s.c);
+  el.innerHTML = `<b><i></i>${s.t}</b><span>${s.d}</span>`; labelsEl.appendChild(el);
+  const ln = document.createElementNS('http://www.w3.org/2000/svg', 'line'); ln.setAttribute('stroke', s.c); leaders.appendChild(ln);
+  const ci = document.createElementNS('http://www.w3.org/2000/svg', 'circle'); ci.setAttribute('r', 7); ci.setAttribute('stroke', s.c); leaders.appendChild(ci);
+  return { el, ln, ci };
+});
+
+/* ---------- Renderer ---------- */
+const canvas = $('#gl');
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
+} catch (e) {
+  document.documentElement.classList.add('nogl'); $('#loader').classList.add('off');
+  $('.hud').style.display = 'none'; doReveals(); addEventListener('scroll', doReveals);
+  throw e;
+}
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.05;
+let pr = Math.min(devicePixelRatio || 1, 1.75);
+renderer.setPixelRatio(pr);
+
+const scene = new THREE.Scene();
+const BG = new THREE.Color('#08080a'), BG_BP = new THREE.Color('#061423');
+scene.background = BG.clone();
+const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 200);
+
+/* ---------- Studio lighting baked into the environment ---------- */
+const studio = new THREE.Scene();
+studio.background = new THREE.Color('#020204');
+function panel(w, h, k, pos, col) {
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ color: new THREE.Color(col).multiplyScalar(k), side: THREE.DoubleSide }));
+  m.position.set(...pos); m.lookAt(0, 0, 0); studio.add(m);
+}
+panel(22, 14, 5.5, [-22, 20, 20], '#ffffff');   // key softbox, off-axis
+panel(2.4, 34, 8, [30, 4, 12], '#ff6fd8');      // strip light, magenta
+panel(2.4, 34, 6, [-32, 2, -8], '#5fe6ff');     // strip light, cyan
+panel(34, 4, 2.2, [0, -18, 12], '#8b5cf6');     // floor bounce
+panel(26, 8, 1.4, [4, 26, -22], '#ffffff');     // back rim
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(studio, 0.03).texture;
+scene.environmentIntensity = 1;
+
+/* ---------- Geometry: a pixel "P" built from 15 beveled blocks ---------- */
+const CELL = 1.1;
+const GRID = [[0,0],[1,0],[2,0],[3,0],[0,1],[4,1],[0,2],[4,2],[0,3],[1,3],[2,3],[3,3],[0,4],[0,5],[0,6]];
+const ACCENT = { '3,0': 0, '4,1': 1, '4,2': 2, '2,3': 3, '0,4': 4, '0,6': 5 };
+const root = new THREE.Group(); scene.add(root);
+
+const satin = new THREE.MeshPhysicalMaterial({ color: '#b8b3ac', metalness: 1, roughness: 0.3 });
+const glass = new THREE.MeshPhysicalMaterial({ color: '#06060b', metalness: 0.1, roughness: 0.06, clearcoat: 1, clearcoatRoughness: 0.04 });
+const bodyGeo = new RoundedBoxGeometry(1, 1, 1, 5, 0.09);       // polished bevel
+const insetGeo = new RoundedBoxGeometry(0.64, 0.64, 0.1, 3, 0.03);
+const edgeGeo = new THREE.EdgesGeometry(new THREE.BoxGeometry(1, 1, 1));
+const insetEdgeGeo = new THREE.EdgesGeometry(new THREE.BoxGeometry(0.64, 0.64, 0.1));
+const edgeMat = new THREE.LineBasicMaterial({ color: '#22d3ee' });
+
+const parts = [];
+const accentMats = [];
+GRID.forEach(([x, y], i) => {
+  const g = new THREE.Group();
+  const body = new THREE.Mesh(bodyGeo, satin);
+  const ai = ACCENT[x + ',' + y];
+  let mat = glass;
+  if (ai !== undefined) {
+    const col = new THREE.Color(SERVICES[ai].c);
+    mat = new THREE.MeshStandardMaterial({ color: col, emissive: col, emissiveIntensity: 1.2, roughness: 0.35, metalness: 0 });
+    accentMats[ai] = mat;
+  }
+  const front = new THREE.Mesh(insetGeo, mat); front.position.z = 0.5;
+  const back = new THREE.Mesh(insetGeo, glass); back.position.z = -0.5;
+  const edges = new THREE.Group(); edges.visible = false;
+  const ie = new THREE.LineSegments(insetEdgeGeo, edgeMat); ie.position.z = 0.5; const ie2 = ie.clone(); ie2.position.z = -0.5;
+  edges.add(new THREE.LineSegments(edgeGeo, edgeMat), ie, ie2);
+  g.add(body, front, back, edges);
+  const base = new THREE.Vector3((x - 2) * CELL, (3 - y) * CELL, 0);
+  const rnd = (k) => { const s = Math.sin(i * 12.9898 + k * 78.233) * 43758.5453; return s - Math.floor(s); };
+  const lift = new THREE.Vector3(base.x * 1.35 + (rnd(1) - .5) * 1.2, base.y * 1.15 + (rnd(2) - .5) * 1.2, (ai !== undefined ? 3.2 : 1) + rnd(3) * 1.6);
+  const rot = new THREE.Vector3((rnd(4) - .5) * 1.1, (rnd(5) - .5) * 1.4, (rnd(6) - .5) * .8);
+  g.position.copy(base);
+  root.add(g);
+  parts.push({ g, base, lift, rot, order: 1 - (y / 6) * 0.9, ai, body, front, back, edges });
+});
+
+/* pixel dust, built once the page is idle */
+let dust;
+(window.requestIdleCallback || ((f) => setTimeout(f, 400)))(() => {
+  const n = 320, pos = new Float32Array(n * 3);
+  for (let i = 0; i < n; i++) { pos[i * 3] = (Math.random() - .5) * 34; pos[i * 3 + 1] = (Math.random() - .5) * 26; pos[i * 3 + 2] = (Math.random() - .5) * 30 - 4; }
+  const geo = new THREE.BufferGeometry(); geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  dust = new THREE.Points(geo, new THREE.PointsMaterial({ color: '#c4b5fd', size: 0.07, transparent: true, opacity: 0.55, depthWrite: false, blending: THREE.AdditiveBlending }));
+  scene.add(dust);
+});
+
+/* ---------- Post chain: MSAA HDR, bloom, ACES, grain ---------- */
+const rt = new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType, samples: 4 });
+const composer = new EffectComposer(renderer, rt);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 0.35, 0.6, 0.92);   // high threshold: glints only
+composer.addPass(bloom);
+composer.addPass(new OutputPass());
+const grain = new ShaderPass({
+  uniforms: { tDiffuse: { value: null }, time: { value: 0 }, amount: { value: 0.05 } },
+  vertexShader: 'varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+  fragmentShader: 'uniform sampler2D tDiffuse;uniform float time,amount;varying vec2 vUv;float h(vec2 p){return fract(sin(dot(p,vec2(12.9898,78.233)))*43758.5453);}void main(){vec4 c=texture2D(tDiffuse,vUv);float n=h(vUv*vec2(1920.,1080.)+time)-.5;c.rgb+=n*amount;gl_FragColor=c;}'
+});
+composer.addPass(grain);
+
+/* ---------- Scroll-directed camera: cues pinned to sections ---------- */
+const cues = [
+  { id: 'hero',   shot: { frame: 11,  az: -18, el: 7,  tx: 0,   ty: 0,   tz: 0, offX: .22, explode: 0,   ts: 1 } },
+  { id: 'close',  shot: { frame: 6.6, az: 28,  el: 12, tx: .3,  ty: 1.9, tz: 0, offX: -.3, explode: 0,   ts: 1 / 12 } },
+  { id: 'apart',  shot: { frame: 17,  az: -30, el: 20, tx: 0,   ty: .4,  tz: 1.2, offX: 0, explode: 1,   ts: 1 } },
+  { id: 'around', shot: { frame: 11.5, az: 152, el: 10, tx: 0,  ty: 0,   tz: 0, offX: .24, explode: .1,  ts: 1 } },
+  { id: 'extras', shot: { frame: 16, az: 152, el: 14, tx: 0, ty: 0, tz: 0, offX: 0, explode: .1, ts: 1 } },
+  { id: 'outro',  shot: { frame: 10.5, az: 14, el: 6,  tx: 0,   ty: .2,  tz: 0, offX: -.24, explode: 0,   ts: 1 } }
+];
+const KEYS = Object.keys(cues[0].shot);
+let maxScroll = 1;
+function layout() {
+  maxScroll = Math.max(1, document.documentElement.scrollHeight - innerHeight);
+  cues.forEach((c) => { const el = document.getElementById(c.id); c.at = clamp((el.offsetTop + el.offsetHeight / 2 - innerHeight / 2) / maxScroll, 0, 1); });
+  cues[0].at = 0; cues[cues.length - 1].at = 1;
+  for (let i = 1; i < cues.length; i++) cues[i].at = Math.max(cues[i].at, cues[i - 1].at + 0.001);
+}
+function targetShot(p) {
+  let i = 0; while (i < cues.length - 2 && p > cues[i + 1].at) i++;
+  const a = cues[i], b = cues[i + 1];
+  const k = smooth(clamp((p - a.at) / (b.at - a.at), 0, 1));
+  const out = {}; KEYS.forEach((key) => { out[key] = lerp(a.shot[key], b.shot[key], k); });
+  return out;
+}
+const cur = { ...cues[0].shot };
+
+/* ---------- Interaction: cursor studio, hold-to-light, sound, blueprint ---------- */
+let px = 0, py = 0, ex = 0, ey = 0;
+addEventListener('pointermove', (e) => { px = e.clientX / innerWidth * 2 - 1; py = e.clientY / innerHeight * 2 - 1; });
+addEventListener('deviceorientation', (e) => { if (e.gamma == null || !tiltOn) return; px = clamp(e.gamma / 35, -1, 1); py = clamp((e.beta - 40) / 35, -1, 1); });
+let tiltOn = false;
+
+let ac = null, tone = null;
+function initAudio() {
+  try { ac = ac || new (window.AudioContext || window.webkitAudioContext)(); if (ac.state === 'suspended') ac.resume(); } catch (e) { ac = null; }
+  if (!tiltOn && window.DeviceOrientationEvent) {
+    try {
+      if (typeof DeviceOrientationEvent.requestPermission === 'function') DeviceOrientationEvent.requestPermission().then((r) => { tiltOn = r === 'granted'; }).catch(() => {});
+      else tiltOn = true;
+    } catch (e) {}
+  }
+}
+function tick() {
+  if (!ac) return;
+  const t = ac.currentTime, len = (ac.sampleRate * 0.045) | 0, buf = ac.createBuffer(1, len, ac.sampleRate), d = buf.getChannelData(0);
+  for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 2);
+  const s = ac.createBufferSource(); s.buffer = buf;
+  const f = ac.createBiquadFilter(); f.type = 'bandpass'; f.frequency.value = 2200 + Math.random() * 900; f.Q.value = 5;
+  const g = ac.createGain(); g.gain.value = 0.22;
+  s.connect(f); f.connect(g); g.connect(ac.destination); s.start(t);
+}
+function startTone() {
+  if (!ac || tone) return;
+  const o = ac.createOscillator(), f = ac.createBiquadFilter(), g = ac.createGain();
+  o.type = 'sawtooth'; o.frequency.value = 90; f.type = 'lowpass'; f.frequency.value = 400; g.gain.value = 0.05;
+  o.connect(f); f.connect(g); g.connect(ac.destination); o.start(); tone = { o, f, g };
+}
+function stopTone() { if (!tone) return; const t = ac.currentTime; tone.g.gain.setTargetAtTime(0, t, 0.05); tone.o.stop(t + 0.3); tone = null; }
+function chime() {
+  if (!ac) return; const t = ac.currentTime;
+  [660, 990, 1320].forEach((fr, i) => { const o = ac.createOscillator(), g = ac.createGain(); o.type = 'sine'; o.frequency.value = fr; g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.12 / (i + 1), t + 0.02); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.9); o.connect(g); g.connect(ac.destination); o.start(t); o.stop(t + 1); });
+}
+
+let holding = false, power = 0, fired = false;
+const holdBtn = $('#hold'), ring = $('#ring'), holdTxt = $('#holdTxt');
+function down(e) { if (e && e.preventDefault) e.preventDefault(); holding = true; initAudio(); startTone(); }
+function up() { holding = false; stopTone(); fired = false; }
+holdBtn.addEventListener('pointerdown', down);
+['pointerup', 'pointerleave', 'pointercancel'].forEach((n) => holdBtn.addEventListener(n, up));
+holdBtn.addEventListener('keydown', (e) => { if ((e.key === ' ' || e.key === 'Enter') && !holding) { e.preventDefault(); down(); } });
+holdBtn.addEventListener('keyup', (e) => { if (e.key === ' ' || e.key === 'Enter') up(); });
+holdBtn.addEventListener('contextmenu', (e) => e.preventDefault());
+
+let blueprint = false;
+$('#bp').addEventListener('click', (e) => {
+  blueprint = !blueprint; e.currentTarget.classList.toggle('on', blueprint);
+  parts.forEach((p) => { p.body.visible = p.front.visible = p.back.visible = !blueprint; p.edges.visible = blueprint; });
+});
+
+/* ---------- Resize ---------- */
+let W = 1, H = 1, aspect = 1;
+function resize() {
+  W = innerWidth; H = innerHeight; aspect = W / H;
+  camera.aspect = aspect; camera.updateProjectionMatrix();
+  renderer.setPixelRatio(pr); renderer.setSize(W, H, false);
+  composer.setPixelRatio(pr); composer.setSize(W, H);
+  layout();
+}
+addEventListener('resize', resize);
+resize();
+addEventListener('load', layout);
+
+/* ---------- Frame loop ---------- */
+const clock = new THREE.Clock();
+let sim = 0, lastBeat = 0, bloomOn = true, emaDt = 1 / 60, frames = 0, wasHidden = false;
+const v = new THREE.Vector3(), right = new THREE.Vector3(), up3 = new THREE.Vector3(), target = new THREE.Vector3();
+const tanH = Math.tan(camera.fov * DEG / 2);
+
+function frame() {
+  requestAnimationFrame(frame);
+  if (document.hidden) { wasHidden = true; return; }
+  let dt = Math.min(clock.getDelta(), 0.1); if (wasHidden) { dt = 0.016; wasHidden = false; }
+
+  /* adaptive quality */
+  emaDt = lerp(emaDt, dt, 0.05); frames++;
+  if (frames % 90 === 0 && frames > 120 && emaDt > 1 / 40) {
+    if (pr > 1) { pr = Math.max(1, pr - 0.25); resize(); } else if (bloomOn) { bloomOn = false; bloom.enabled = false; }
+  }
+
+  /* scroll -> camera cue */
+  const p = clamp(scrollY / maxScroll, 0, 1);
+  const tgt = targetShot(p);
+  const kd = 1 - Math.exp(-dt * 5);
+  KEYS.forEach((k) => { cur[k] += (tgt[k] - cur[k]) * kd; });
+
+  /* one clock drives everything; close-up slows it to 1/12 */
+  sim += dt * cur.ts;
+  const BEAT = 0.8, beat = Math.floor(sim / BEAT);
+  if (beat !== lastBeat) { lastBeat = beat; if (power > 0.3 && ac && cur.ts > 0.5) tick(); }
+
+  /* hold-to-light */
+  power = clamp(power + (holding ? dt / 1.1 : -dt / 0.8), 0, 1);
+  if (holding && power >= 1 && !fired) { fired = true; chime(); }
+  if (tone && ac) { tone.o.frequency.setTargetAtTime(90 + power * 520, ac.currentTime, 0.05); tone.f.frequency.setTargetAtTime(400 + power * 3000, ac.currentTime, 0.05); }
+  ring.style.strokeDashoffset = 126 * (1 - power);
+  holdBtn.classList.toggle('on', power > 0.98);
+  holdTxt.textContent = power > 0.98 ? 'Aydınlık' : 'Basılı tut · Aydınlat';
+
+  /* pulse on the accents */
+  const ph = sim / BEAT * Math.PI * 2;
+  accentMats.forEach((m, i) => { m.emissiveIntensity = 1.15 + 0.45 * (0.5 + 0.5 * Math.sin(ph + i * 1.05)) + power * 3.2; });
+
+  /* exploded view: top parts leave first, come back last */
+  const e = clamp(cur.explode, 0, 1);
+  for (const pt of parts) {
+    const delay = (1 - pt.order) * 0.42, t = ease(clamp((e - delay) / 0.58, 0, 1));
+    pt.g.position.copy(pt.base).addScaledVector(pt.lift, t);
+    pt.g.rotation.set(pt.rot.x * t, pt.rot.y * t, pt.rot.z * t);
+  }
+  root.rotation.y = Math.sin(sim * 0.5) * 0.1;
+  root.rotation.x = Math.sin(sim * 0.37) * 0.03;
+  if (dust) { dust.rotation.y += dt * 0.01; dust.position.y = Math.sin(sim * 0.2) * 0.4; }
+
+  /* camera: frame by size, not distance */
+  const portrait = aspect < 0.85;
+  const dist = Math.max((cur.frame / 2) / tanH, (cur.frame / 2) / (tanH * aspect)) * (portrait ? 1.38 : 1);
+  const az = cur.az * DEG, el = cur.el * DEG;
+  target.set(cur.tx, cur.ty, cur.tz);
+  camera.position.set(target.x + Math.sin(az) * Math.cos(el) * dist, target.y + Math.sin(el) * dist, target.z + Math.cos(az) * Math.cos(el) * dist);
+  camera.lookAt(target); camera.updateMatrixWorld();
+  right.setFromMatrixColumn(camera.matrixWorld, 0); up3.setFromMatrixColumn(camera.matrixWorld, 1);
+  const visH = 2 * dist * tanH, visW = visH * aspect;
+  const sx = portrait ? 0 : cur.offX, sy = portrait ? 0.2 : 0;
+  v.copy(right).multiplyScalar(-sx * visW).addScaledVector(up3, -sy * visH);
+  camera.position.add(v); target.add(v); camera.lookAt(target);
+
+  /* cursor rotates the studio */
+  ex += (px - ex) * 0.05; ey += (py - ey) * 0.05;
+  scene.environmentRotation.set(ey * 0.45, -ex * 0.8, 0);
+
+  /* blueprint + power -> look */
+  scene.background.lerp(blueprint ? BG_BP : BG, 0.08);
+  bloom.strength = lerp(bloom.strength, (blueprint ? 0.2 : 0.35) + power * 0.9, 0.1);
+  grain.uniforms.time.value = (performance.now() % 10000) * 0.01;
+
+  updateLabels(e);
+  composer.render();
+}
+
+/* two clean columns with leader lines */
+function updateLabels(e) {
+  const on = !portraitLabels() && e > 0.55;
+  const op = on ? smooth(clamp((e - 0.55) / 0.4, 0, 1)) : 0;
+  labelsEl.style.opacity = op;
+  if (op <= 0) return;
+  const pts = SERVICES.map((_, i) => {
+    const pt = parts.find((q) => q.ai === i); pt.g.getWorldPosition(v); v.project(camera);
+    return { i, x: (v.x * 0.5 + 0.5) * W, y: (-v.y * 0.5 + 0.5) * H };
+  });
+  const left = pts.filter((q) => q.x < W / 2).sort((a, b) => a.y - b.y);
+  const rightC = pts.filter((q) => q.x >= W / 2).sort((a, b) => a.y - b.y);
+  const place = (arr, isLeft) => {
+    const n = arr.length, top = H * 0.2, bot = H * 0.78;
+    arr.forEach((q, k) => {
+      const y = n === 1 ? (top + bot) / 2 : top + (bot - top) * (k / (n - 1));
+      const lx = isLeft ? Math.max(16, W * 0.04) : W - Math.max(16, W * 0.04) - 250;
+      const L = labEls[q.i];
+      L.el.style.transform = `translate(${lx}px,${y - 30}px)`;
+      const ex1 = isLeft ? lx + 250 : lx, ey1 = y;
+      L.ln.setAttribute('x1', ex1); L.ln.setAttribute('y1', ey1); L.ln.setAttribute('x2', q.x); L.ln.setAttribute('y2', q.y);
+      L.ci.setAttribute('cx', q.x); L.ci.setAttribute('cy', q.y);
+    });
+  };
+  place(left, true); place(rightC, false);
+}
+function portraitLabels() { return innerWidth <= 800; }
+
+/* ---------- Boot ---------- */
+addEventListener('scroll', doReveals, { passive: true });
+doReveals();
+(async () => {
+  try { await renderer.compileAsync(scene, camera); } catch (e) {}
+  composer.render();
+  $('#loader').classList.add('off');
+  window.__px && window.__px();
+  frame();
+})();
+</script>
+</body>
+</html>
